@@ -6,6 +6,8 @@
     
     <!-- IMPORTED COMPONENTS -->    
     <script src="./js/Rotation.js"></script>
+    <script src="./js/Coin.js"></script>
+    <script src="./js/Fish.js"></script>
     
   </head>
   <body>
@@ -68,6 +70,12 @@
           position="-15 -30 -40"
           rotation="0 90 0"
         ></a-entity>
+
+         <!--Fish Entity-->
+         <a-entity position="0 0 0" id="fishModels" fish> </a-entity>
+
+         <!--Treasure Entity-->
+         <a-entity position="0 0 0" id="treasureCoins" coins> </a-entity>
        
         <!--Turtule-->
         <a-entity
@@ -85,6 +93,8 @@
         position="5 0 15"
         rotation="0 90 -20"        
         diver-rotation-reader
+        coins
+        flying-fish
       >
         <a-sphere
           id="bubble1"
